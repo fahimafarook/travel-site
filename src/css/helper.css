@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'Asap';
+    src: url('./fonts/Asap-CondensedBoldItalic.woff2') format('woff2')
+  }
+
+@font-face{
+    font-family: 'Sarabun';
+    src: url("./fonts//Sarabun-Bold.woff2")format('woff2')
+}
+
+.app-js{
+    display: flex;
+    flex-direction: column;
+}
+ /* progfile-page-css-start ------XX------- */
+
+.home-page-parent{
+    height: 140vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bg-layer1 {
+    position: relative;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('./images/scenebg4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+}
+
+.bg-layer2 {
+    position: absolute;
+    /* top: 30%; */
+    /* top:0; */
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%; 
+
+    background-image: url('./images/cliffMan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.bg-layer3{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 40vh;
+    width: 130%; 
+    background-image: url('./images/cloud.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    animation: cloudMove 5s alternate infinite;
+}
+
+@keyframes cloudMove{
+    from{
+        transform: translateX(-20px);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+
+.lets-hike{
+    position: absolute;
+    top:0%;
+    right: 5%;
+    font-size: 800%;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    font-weight: 700;
+    font-family: 'Sarabun';
+
+}
+
+ /* progfile-page-css-end ------XX------- */
+
+ /* Image section -css- start ------XX------- */
+
+.places-image-section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(225, 224, 224);
+}
+
+.the-section{
+    background-color: rgb(0, 0, 0);
+    min-height: 20vh;
+    min-width: 49vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 450%;
+    font-weight: 500;
+    color: rgb(210, 209, 209);
+    overflow: hidden;
+}
+
+
+.section-1{
+    background-size: contain;
+     /* background-position: center; */
+     background-size: cover;
+     background-image: url('./images/himalayas1.jpeg');
+}
+
+.section-1:hover{
+    color: white;
+    transition: font-size 0.5s ease;
+    font-size: 750%;
+    animation: section1Image 2s infinite ;
+}
+
+@keyframes section1Image {
+    0% {
+      background-image: url('./images/himalayas2.png');
+    }
+    25% {
+      background-image: url('./images/himalayas3.png');
+    }
+    75% {
+        background-image:url('./images/himalayas1.jpeg');
+      }
+    100% {
+        background-image:url('./images/himalayas2.png');
+      }
+  }
+
+
+
+.section-2{
+    /* background-position: center; */
+    background-size: cover;
+    background-image: url('./images/nepal3.jpeg');
+}
+
+.section-2:hover{
+    background-size: cover;
+    color: white;
+    transition: ease font 2s;
+    font-size: 750%;
+    animation: section2Image 2s infinite ;
+}
+
+
+@keyframes section2Image {
+   0% {
+     background-image: url('./images/nepal2.png');
+   }
+   25% {
+     background-image:  url('./images/nepal3.jpeg');
+   }
+   75% {
+       background-image:  url('./images/nepal1.jpeg');
+     }
+   100% {
+       background-image: url('./images/nepal2.png');
+     }
+ }
+
+
+ .section-3{
+    /* background-position: center; */
+    background-size: cover;
+    background-image: url('./images/varkla1.png');
+}
+
+.section-3:hover{
+    color: white;
+    transition: ease font 2s;
+    font-size: 750%;
+    animation: section3Image 2s infinite ;
+}
+
+
+@keyframes section3Image {
+   0% {
+    background-image: url('./images/varkla2.png');
+   }
+   25% {
+    background-image: url('./images/varkla3.jpeg');
+   }
+   75% {
+    background-image: url('./images/varkla1.png');
+     }
+   100% {
+    background-image: url('./images/varkla2.png');
+     }
+ }
+
+ .section-4{
+    /* background-position: center; */
+    background-size: cover;
+    background-image: url('./images/ladakh2.jpeg');
+}
+
+.section-4:hover{
+    color: white;
+    transition: ease font 2s;
+    font-size: 750%;
+    animation: section4Image 2s infinite ;
+}
+
+
+@keyframes section4Image {
+   0% {
+    background-image: url('./images/ladakh1.jpeg');
+   }
+   25% {
+    background-image: url('./images/ladakh3.jpeg');
+   }
+   75% {
+    background-image: url('./images/ladakh1.jpeg');
+     }
+   100% {
+    background-image: url('./images/ladakh2.jpeg');
+     }
+ }
+
+ /* Image section -css-end ------XX------- */
+
+ /* upcoming event -css-start------XX------- */
+
+.upcoming-events-parent{
+    overflow-x: hidden;
+    position: relative;
+    background-color: rgb(225, 224, 224);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.upcoming-event-header{
+    position: absolute;
+    top:1vh;
+    left: 4vw;
+    font-size: 350%;
+    display: flex;
+    font-family: 'Sarabun';
+    margin-bottom:5px;
+}
+
+.event-card-parent{
+    position: relative;
+    margin-left: 3vw;
+    top:4vh;
+}
+
+
+.event-card{
+    position: relative;
+    height: 80vh;
+    width: 30vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    /* animation: slideLeft 10s forwards; */
+}
+
+@keyframes slideLeft {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-500px);
+    }
+}
+
+.event-picture{
+    overflow: hidden;
+    top:1px;
+    margin: 10px;
+    position: relative;
+    height: 45%;
+    width: 95%;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+}
+
+.trek-name{
+    height: 10%;
+    width: 99%;
+    /* background-color: aqua; */
+    font-size: 150%;
+    /* font-family: 'Sarabun'; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(73, 73, 74);
+    font-weight: 700;
+}
+
+.available-date-section{
+    height: 40%;
+    width: 99%;
+}
+
+
+.available-date-text{
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.available-dates{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+}
+.dates-display{
+    
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    position: relative;
+    height: 15%;
+    width: 70%;
+    /* border:solid 1px rgb(0, 0, 0); */
+    background-color: rgb(155, 155, 155);
+    color: aliceblue;
+    font-size: larger;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.scroll-right
+{
+    position: absolute;
+    top: 51%;
+    right: 5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+   
+}
+.scroll-right span:nth-child(2)
+{
+    animation-delay: -0.2s;
+    margin-left: 1px;
+}
+.scroll-right span:nth-child(3)
+{
+    animation-delay: -0.4s;
+    margin-left: 1px;
+}
+.scroll-right span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transform: rotate(-45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+@keyframes animate
+{
+    0%
+  {
+        opacity: 0;
+        transform: rotate(4-5deg) translate(-20px,-20px);
+    }
+    50%
+  {
+        opacity: 1;
+    }
+    100%
+  {
+        opacity: 0;
+        transform: rotate(-45deg) translate(20px,20px);
+    }
+}
+
+
+
+ /* upcoming event -css-end ------XX------- */
