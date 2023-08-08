@@ -16,7 +16,7 @@
 
 .home-page-parent{
     height: 140vh;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -27,11 +27,10 @@
     height: 100vh;
     width: 100%;
 
-    background-image: url('./images/scenebg4.png');
+    background-image: url('./images/scenebg4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: aqua;
 }
 
 .bg-layer2 {
@@ -43,7 +42,7 @@
     height: 100vh;
     width: 100%; 
 
-    background-image: url('./images/cliffMan.png');
+    background-image: url('./images/mobileMan.tiff');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,8 +54,8 @@
     top: 0%;
     left: 0;
     height: 40vh;
-    width: 130%; 
-    background-image: url('./images/cloud.png');
+    width: 100%; 
+    background-image: url('./images/cloud.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,8 +75,8 @@
 .lets-hike{
     position: absolute;
     top:0%;
-    right: 5%;
-    font-size: 800%;
+    right: 1%;
+    font-size: 350%;
     color: rgb(255, 255, 255);
     z-index: 3;
     font-weight: 700;
@@ -90,6 +89,7 @@
  /* Image section -css- start ------XX------- */
 
 .places-image-section{
+    overflow-x: hidden;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -106,7 +106,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 450%;
+    font-size: 300%;
     font-weight: 500;
     color: rgb(210, 209, 209);
     overflow: hidden;
@@ -117,28 +117,28 @@
     background-size: contain;
      /* background-position: center; */
      background-size: cover;
-     background-image: url('./images/himalayas1.jpeg');
+     background-image: url('./images/himalayas1.jpg');
 }
 
 .section-1:hover{
     color: white;
     transition: font-size 0.5s ease;
-    font-size: 750%;
+    font-size: 370%;
     animation: section1Image 2s infinite ;
 }
 
 @keyframes section1Image {
     0% {
-      background-image: url('./images/himalayas2.png');
+      background-image: url('./images/himalayas2.jpg');
     }
     25% {
-      background-image: url('./images/himalayas3.png');
+      background-image: url('./images/himalayas3.jpg');
     }
     75% {
-        background-image:url('./images/himalayas1.jpeg');
+        background-image:url('./images/himalayas1.jpg');
       }
     100% {
-        background-image:url('./images/himalayas2.png');
+        background-image:url('./images/himalayas2.jpg');
       }
   }
 
@@ -147,30 +147,30 @@
 .section-2{
     /* background-position: center; */
     background-size: cover;
-    background-image: url('./images/nepal3.jpeg');
+    background-image: url('./images/nepal3.jpg');
 }
 
 .section-2:hover{
     background-size: cover;
     color: white;
     transition: ease font 2s;
-    font-size: 750%;
+    font-size: 370%;
     animation: section2Image 2s infinite ;
 }
 
 
 @keyframes section2Image {
    0% {
-     background-image: url('./images/nepal2.png');
+     background-image: url('./images/nepal2.jpg');
    }
    25% {
-     background-image:  url('./images/nepal3.jpeg');
+     background-image:  url('./images/nepal3.jpg');
    }
    75% {
-       background-image:  url('./images/nepal1.jpeg');
+       background-image:  url('./images/nepal1.jpg');
      }
    100% {
-       background-image: url('./images/nepal2.png');
+       background-image: url('./images/nepal2.jpg');
      }
  }
 
@@ -178,58 +178,58 @@
  .section-3{
     /* background-position: center; */
     background-size: cover;
-    background-image: url('./images/varkla1.png');
+    background-image: url('./images/varkla1.jpg');
 }
 
 .section-3:hover{
     color: white;
     transition: ease font 2s;
-    font-size: 750%;
+    font-size: 370%;
     animation: section3Image 2s infinite ;
 }
 
 
 @keyframes section3Image {
    0% {
-    background-image: url('./images/varkla2.png');
+    background-image: url('./images/varkla2.jpg');
    }
    25% {
-    background-image: url('./images/varkla3.jpeg');
+    background-image: url('./images/varkla3.jpg');
    }
    75% {
-    background-image: url('./images/varkla1.png');
+    background-image: url('./images/varkla1.jpg');
      }
    100% {
-    background-image: url('./images/varkla2.png');
+    background-image: url('./images/varkla2.jpg');
      }
  }
 
  .section-4{
     /* background-position: center; */
     background-size: cover;
-    background-image: url('./images/ladakh2.jpeg');
+    background-image: url('./images/ladakh2.jpg');
 }
 
 .section-4:hover{
     color: white;
     transition: ease font 2s;
-    font-size: 750%;
+    font-size: 370%;
     animation: section4Image 2s infinite ;
 }
 
 
 @keyframes section4Image {
    0% {
-    background-image: url('./images/ladakh1.jpeg');
+    background-image: url('./images/ladakh1.jpg');
    }
    25% {
-    background-image: url('./images/ladakh3.jpeg');
+    background-image: url('./images/ladakh3.jpg');
    }
    75% {
-    background-image: url('./images/ladakh1.jpeg');
+    background-image: url('./images/ladakh1.jpg');
      }
    100% {
-    background-image: url('./images/ladakh2.jpeg');
+    background-image: url('./images/ladakh2.jpg');
      }
  }
 
@@ -242,26 +242,42 @@
     position: relative;
     background-color: rgb(225, 224, 224);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    right: 0;
+
 }
 
 .upcoming-event-header{
+    padding-top: 20px;
     position: absolute;
-    top:1vh;
+    top:0.5vh;
     left: 4vw;
-    font-size: 350%;
+    font-size: 200%;
     display: flex;
     font-family: 'Sarabun';
-    margin-bottom:5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
 }
 
 .event-card-parent{
     position: relative;
-    margin-left: 3vw;
-    top:4vh;
+    margin-left: 1vw;
+    top:2vh;
+    animation: h-scroll 20s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes h-scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-950px);
+    }
 }
 
 

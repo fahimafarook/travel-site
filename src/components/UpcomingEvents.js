@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import himalayas from "./../css/images/himalayas2.png";
-import nepal from "./../css/images/nepal1.jpeg";
-import varkla from "./../css/images/varkla1.png";
-import ladakh from "./../css/images/ladakh2.jpeg";
+import himalayas from "./../css/images/himalayas2.jpg";
+import nepal from "./../css/images/nepal1.jpg";
+import varkla from "./../css/images/varkla1.jpg";
+import ladakh from "./../css/images/ladakh2.jpg";
 
 
 function UpcomingEvents(props) {
@@ -24,9 +24,10 @@ function UpcomingEvents(props) {
 
     return (
         <div className='upcoming-events-parent'>
-            <div className='upcoming-event-header'>Upcoming events...</div>
-            <div className='event-card-parent'>
-                <div className='event-card'>
+            <div className=' upcoming-event-header'>UPCOMING EVENTS</div>
+
+            <div className='event-card-parent col-11 col-md-4'>
+                <div className='event-card col-11 col-11 '>
                     <img className='event-picture' src={himalayas}></img>
                     <div className='trek-name'>Himalayas Trek</div>
                     <hr className='my-hr'></hr>
@@ -43,8 +44,8 @@ function UpcomingEvents(props) {
             </div>
 
 
-            <div className='event-card-parent'>
-                <div className='event-card'>
+            <div className='event-card-parent col-11 col-11 col-md-4'>
+                <div className='event-card col-11 col-11'>
                     <img className='event-picture' src={nepal} loading="lazy"></img>
                     <div className='trek-name'>Nepal Trek</div>
                     <hr className='my-hr'></hr>
@@ -61,8 +62,8 @@ function UpcomingEvents(props) {
                 </div>
             </div>
 
-            <div className='event-card-parent'>
-                <div className='event-card'>
+            <div className='event-card-parent col-11 col-11 col-md-4'>
+                <div className='event-card col-11 col-11'>
                     <img className='event-picture' src={varkla}></img>
                     <div className='trek-name'>Varkla Trek</div>
                     <hr className='my-hr'></hr>
@@ -77,8 +78,8 @@ function UpcomingEvents(props) {
                 </div>
             </div>
 
-            <div className='event-card-parent'>
-                <div className='event-card'>
+            <div className='event-card-parent col-11 col-11 col-md-4'>
+                <div className='event-card col-11 col-11'>
                     <img className='event-picture' src={ladakh}></img>
                     <div className='trek-name'>Ladakh Trek</div>
                     <hr className='my-hr'></hr>
@@ -103,4 +104,6 @@ function UpcomingEvents(props) {
 }
 
 export default UpcomingEvents;
+
+
 

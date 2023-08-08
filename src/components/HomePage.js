@@ -52,7 +52,7 @@ function HomePage(props) {
     })
     return (
         <div className=''>
-            <div className='lets-hike'>COME LETS HIKE</div>
+            <div className='lets-hike'>TAMILNADU TRAVELLER COMMUNITY</div>
             <div className='bg-layer1'></div>
             <div className='bg-layer2'></div>
             {/* <div className='bg-layer3'></div> */}
